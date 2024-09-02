@@ -50,6 +50,37 @@ struct resource_list
   std::optional<hal::spi*> spi = std::nullopt;
   std::optional<hal::output_pin*> spi_chip_select = std::nullopt;
   std::optional<hal::stream_dac_u8*> stream_dac = std::nullopt;
+
+  // all the pins
+  std::optional<hal::input_pin*> a0 = std::nullopt;
+  std::optional<hal::input_pin*> a1 = std::nullopt;
+  std::optional<hal::input_pin*> a2 = std::nullopt;
+  std::optional<hal::input_pin*> a3 = std::nullopt;
+  std::optional<hal::input_pin*> a4 = std::nullopt;
+  std::optional<hal::input_pin*> a5 = std::nullopt;
+  std::optional<hal::input_pin*> a6 = std::nullopt;
+  std::optional<hal::input_pin*> a7 = std::nullopt;
+  std::optional<hal::input_pin*> a8 = std::nullopt;
+  std::optional<hal::input_pin*> a11 = std::nullopt;
+  std::optional<hal::input_pin*> a12 = std::nullopt;
+  std::optional<hal::input_pin*> a13 = std::nullopt;
+  std::optional<hal::input_pin*> a14 = std::nullopt;
+  std::optional<hal::input_pin*> a15 = std::nullopt;
+
+  std::optional<hal::input_pin*> b0 = std::nullopt;
+  std::optional<hal::input_pin*> b1 = std::nullopt;
+  std::optional<hal::input_pin*> b2 = std::nullopt;
+  std::optional<hal::input_pin*> b3 = std::nullopt;
+  std::optional<hal::input_pin*> b4 = std::nullopt;
+
+  std::optional<hal::input_pin*> b8 = std::nullopt;
+  std::optional<hal::input_pin*> b9 = std::nullopt;
+  std::optional<hal::input_pin*> b10 = std::nullopt;
+  std::optional<hal::input_pin*> b11 = std::nullopt;
+  std::optional<hal::input_pin*> b12 = std::nullopt;
+  std::optional<hal::input_pin*> b13 = std::nullopt;
+  std::optional<hal::input_pin*> b14 = std::nullopt;
+  std::optional<hal::input_pin*> b15 = std::nullopt;
 };
 
 // Each application file should have this function implemented

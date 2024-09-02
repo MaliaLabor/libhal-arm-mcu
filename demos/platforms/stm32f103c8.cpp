@@ -46,6 +46,7 @@ resource_list initialize_platform()
   // TODO: replace with actual ADC
   static hal::soft::inert_adc adc(0.5);
 
+#if 0
   // pin G0 on the STM micromod is port B, pin 4
   static hal::stm32f1::input_pin input_pin('B', 4);
 
@@ -74,6 +75,8 @@ resource_list initialize_platform()
                                   .clock_phase = false,
                                 });
 
+#endif
+
   return {
     .reset = []() { hal::cortex_m::reset(); },
     .console = &uart1,
@@ -81,9 +84,9 @@ resource_list initialize_platform()
     .clock = &steady_clock,
     .can = &can,
     .adc = &adc,
-    .input_pin = &input_pin,
-    .i2c = &bit_bang_i2c,
-    .spi = &spi1,
-    .spi_chip_select = &spi_chip_select,
+    // .input_pin = &input_pin,
+    // .i2c = &bit_bang_i2c,
+    // .spi = &spi1,
+    // .spi_chip_select = &spi_chip_select,
   };
 }

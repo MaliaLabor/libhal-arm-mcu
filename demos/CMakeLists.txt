@@ -30,6 +30,7 @@ libhal_build_demos(
   pwm
   spi
   blank
+  pin_test
   # stream_dac
 
   PACKAGES
